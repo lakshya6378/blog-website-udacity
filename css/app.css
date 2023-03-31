@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap');
+:root{
+    --black:#171321;
+    --dkblue:#0d314b;
+    --plum:#4b0d49;
+    --hotmag:#ff17e4;
+    --magenta:#e310cb;
+    --aqua:#86fbfb;
+    --white:#f7f8fa;
+    --font-size:1.3rem;
+    --mono:"oxygen mono",monospace;
+    --sans:oxygen,sans-serif;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+nav{
+    display:flex;
+    width:100%;
+    background:#659DBD;
+    position:relative;
+    justify-content: space-between;
+    text-align: center;
+    padding:15px 30px;
+}
+
+nav .icon{
+    font-family:'Pacifico';
+    font-size: 32px;
+    font-weight:800;
+    color:#fff;
+    cursor:pointer;
+    background-color: red;
+  
+    /* Create the gradient. */
+    background: rgb(131,58,180);
+background: linear-gradient(164deg, rgba(131,58,180,1) 0%, rgba(253,29,101,1) 52%, rgba(252,176,69,1) 100%);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+nav ol{
+    display: flex;
+    list-style: none;
+    margin:auto 0;
+}
+
+nav ol li{
+    margin:0 2px;
+}
+
+nav ol li a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding:5px 10px;
+    
+}
+
+nav ol li:hover a{
+    background:#fff ;
+    color:#5CDB95;
+}
+
+nav .search_box{
+    display: flex;
+    margin:auto 0;
+    height: 35px;
+    line-height: 35px;
+    background: #fff;
+    align-items: baseline;
+}
+
+nav .search_box input{
+    border:none;
+    outline:none;
+    background: #fff;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 20px;
+    width:350px;
+}
+
+nav .search_box span{
+    color:#0a5071;
+    font-size: 20px;
+    background: #fff;
+    height:100%;
+    padding: 8px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;  
+}
+
+
+
+nav .search_box span:hover{
+color: #fff;
+}
+
+nav .search_box span::after{
+    height: 100%;
+    width: 100%;
+    content: '';
+    background: #ff003c;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+nav .search_box span:hover::after{
+    width: 100%;
+}
+
+nav .bar{
+    position: relative;
+    margin: auto;
+}
+
+nav .bar span{
+    position:absolute;
+    color:#fff;
+    font-size:35px;
+}
+nav label,
+input[type="checkbox"]{
+    display: none;
+}
+
+#blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:40px;
+    border-bottom:1px solid rgba(0,0,0,0,0.05);
+    background-color: #c398c8;
+}
+
+.blog-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+.blog-heading span{
+    color: #f33c3c;
+}
+
+.blog-heading h3{
+    font-size:2.4rem;
+    color:#2b2b2b;
+    font-weight:600;
+}
+
+.blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px 0px;
+    flex-wrap: wrap;
+}
+
+.blog-box{
+    width:350px;
+    background-color:#ffffff;
+    border: 1px solid #ececec;
+    margin:20px;
+}
+
+.blog-img{
+    width: 100%;
+    height:auto;
+
+}
+
+.blog-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog-text{
+    padding: 30px;
+    display:flex;
+    flex-direction:column ;
+}
+
+.blog-text span{
+    color: #f33c3c;
+    font-size: 0.9rem;
+}
+
+.blog-text .blog-title{
+    font-size:1.3rem;
+    font-weight:500;
+    color:#272727;
+}
+
+
+.blog-text .blog-title:hover{
+    color:#f33c3c;
+    transition: all ease 0.3s;
+    text-decoration: none;
+}
+
+.blog-text p{
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    margin: 20px 0px;
+}
+
+.blog-text a{
+    color:#0f0f0f;
+}
+
+.blog-text a:hover{
+    color: #f33c3c;
+    transition: all ease 0.3s;
+}
+
+#categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins' ,sans-serif;
+    font-size: 130%;
+    background-color: #e979e5;
+}
+
+#categories h2{
+    color: #fff;
+}
+
+
+#categories ol{
+    list-style-type: none;
+    color: #000;
+}
+
+
+#categories ol a{
+    text-decoration: none;
+    color: #000;
+}
+
+#categories ol a:hover{
+    color: #ffffff;
+}
+
+#aboutus{
+    background-color: #bb3ecc;
+    text-align: center;
+}
+
+#aboutus h2{
+    color: #fff;
+}
+
+footer{
+    text-align: center;
+}
+
+footer ul{
+    list-style-type:none;
+    padding: 0;
+    margin: 2rem 0;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    gap:3rem;
+    font-size:3rem;   
+}
+
+#contactus{
+    background-color: #af16aa;
+    text-align: center;
+}
+
+#contactus h2{
+    color: #fff;
+}
+
+@media screen and (max-width:1250px){
+    nav{
+        display: block;
+        padding:0;
+    }
+
+    nav .icon{
+        display: inline-block;
+        padding:15px 30px;
+    }
+
+    nav .search_box{
+        width:90%;
+        display:inline-flex;
+        justify-content: center;
+        margin-bottom:15px;
+    }
+
+    nav .search_box input{
+        width:90%;
+        size: 100px;
+
+    }
+
+    nav ol{
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        height:0;
+        visibility:hidden;
+        transition:0.3s;
+    }
+
+    nav ol li{
+        text-align: center;
+        transition: 0.3s 0.1s all;
+    }
+
+    nav ol li a{
+        color: #000;
+        font-size:28px;
+        padding:25px;
+        display:block;
+    }
+
+    nav ol li:nth-child(1){
+       transform: translateX(-150px); 
+    }
+    nav ol li:nth-child(2){
+       transform: translateX(-200px); 
+    }
+    nav ol li:nth-child(3){
+       transform: translateX(-250px); 
+    }
+    nav ol li:nth-child(4){
+       transform: translateX(-300px); 
+    }
+    nav ol li:nth-child(5){
+       transform: translateX(-350px); 
+    }
+
+    nav .bar{
+        display:block;
+        position: absolute;
+        top:20px;
+        right:80px;
+        cursor:pointer;
+    }
+
+    nav .bar #times{
+        display:none;
+    }
+
+    #check:checked ~nav .bar #times{
+        display: block;
+    }
+
+    #check:checked ~nav .bar #bars{
+        display: none;
+    }
+
+    #check:checked ~nav ol{
+        visibility: visible;
+        height:465px;
+    }
+
+    #check:checked ~nav ol li:nth-child(1),
+    #check:checked ~nav ol li:nth-child(2),
+    #check:checked ~nav ol li:nth-child(3),
+    #check:checked ~nav ol li:nth-child(4),
+    #check:checked ~nav ol li:nth-child(5){
+        transform: translate(0);
+    }
+
+    .blog-box{
+        width:300px;
+    }
+}
+
+@media(max-width:800px){
+    .blog-box{
+        width:70%;
+    }
+}
+
+@media(max-width:550px){
+    .blog-box{
+        margin: 20px 10px;
+        width:100%;
+    }
+    #blog{
+        padding:20px;
+    }
+}
+
+
